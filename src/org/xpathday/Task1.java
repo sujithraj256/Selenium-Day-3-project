@@ -11,6 +11,7 @@ public class Task1 {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.amazon.in/");
+		driver.manage().window().maximize();
 		
 		WebElement findElement = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		findElement.sendKeys("iphone");
